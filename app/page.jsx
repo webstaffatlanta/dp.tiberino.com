@@ -134,11 +134,11 @@ export default function Home() {
 
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="field-grid">
-              <Field id="nome" label="Nome e cognome" />
-              <Field id="attivita" label="Nome attività" />
-              <Field id="email" label="Email" type="email" />
-              <Field id="telefono" label="Telefono" type="tel" />
-              <Field id="tipo" label="Tipo di attività">
+              <Field id="nome" label="Nome e cognome*" />
+              <Field id="attivita" label="Nome attività*" />
+              <Field id="email" label="Email*" type="email" />
+              <Field id="telefono" label="Telefono*" type="tel" />
+              <Field id="tipo" label="Tipo di attività*">
                 <select id="tipo" name="tipo" required>
                   <option value="">Seleziona</option>
                   <option>Negozio alimentare</option>
@@ -148,19 +148,19 @@ export default function Home() {
                   <option>Altro</option>
                 </select>
               </Field>
-              <Field id="citta" label="Città attività" />
+              <Field id="citta" label="Città attività*" />
             </div>
 
-            <Field id="interesse" label="Perché sei interessato a Tiberino?">
+            <Field id="interesse" label="Perché sei interessato a Tiberino?*">
               <textarea id="interesse" name="interesse" rows="4" required />
             </Field>
 
-            <Field id="inserimento" label="Come pensi di inserirlo nel tuo negozio?">
+            <Field id="inserimento" label="Come pensi di inserirlo nel tuo negozio?*">
               <textarea id="inserimento" name="inserimento" rows="4" required />
             </Field>
 
             <fieldset className="radio-group">
-              <legend>Hai già fatto degustazioni in negozio?</legend>
+              <legend>Hai già fatto degustazioni in negozio?*</legend>
               <label>
                 <input type="radio" name="degustazioni" value="Sì" required />
                 <span>Sì</span>
@@ -175,7 +175,14 @@ export default function Home() {
               <input name="consenso" type="checkbox" required />
               <span>
                 Ho capito che la collaborazione prevede una fase iniziale di valutazione e
-                degustazione
+                degustazione*
+              </span>
+            </label>
+
+            <label className="consent">
+              <input name="consenso" type="checkbox" required />
+              <span>
+                Ho letto ed accetto le <a href="https://tiberino.com/policies/privacy-policy" target="_blank">informative sulla privacy</a> e le <a href="https://tiberino.com/policies/terms-of-service" target="_blank">condizioni del servizio*</a>
               </span>
             </label>
 
