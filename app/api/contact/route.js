@@ -34,7 +34,6 @@ export async function POST(request) {
     interesse: getField(body, "interesse"),
     inserimento: getField(body, "inserimento"),
     degustazioni: getField(body, "degustazioni"),
-    consenso: Boolean(body.consenso),
   };
 
   const missingFields = Object.entries(fields)
@@ -76,7 +75,6 @@ export async function POST(request) {
     ["Perché è interessato a Tiberino", fields.interesse],
     ["Come pensa di inserirlo nel negozio", fields.inserimento],
     ["Ha già fatto degustazioni in negozio", fields.degustazioni],
-    ["Consenso fase iniziale di valutazione e degustazione", "Sì"],
   ];
 
   const text = rows.map(([label, value]) => `${label}: ${value}`).join("\n");

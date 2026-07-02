@@ -141,7 +141,7 @@ export default function EnglishPage() {
         <div className="form-shell">
           <div className="form-copy">
             <p className="kicker" style={{ textAlign: "center" }}>TIBERINO SINCE 1888</p>
-            <h1 style={{ textAlign: "center" }}>REQUEST AN<br />EVALUATION</h1>
+            <h1 style={{ textAlign: "center" }}>REQUEST A<br />CONTACT</h1>
             <p style={{ textAlign: "center" }}>
               Fill in the form with your details.
               <br />
@@ -188,12 +188,6 @@ export default function EnglishPage() {
               </label>
             </fieldset>
 
-            <label className="consent">
-              <input name="consenso" type="checkbox" required />
-              <span>
-                I understand that the collaboration includes an initial evaluation and tasting phase*
-              </span>
-            </label>
 
             <label className="consent">
               <input name="privacy" type="checkbox" required />

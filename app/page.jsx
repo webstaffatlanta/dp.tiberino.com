@@ -144,7 +144,7 @@ export default function Home() {
         <div className="form-shell">
           <div className="form-copy">
             <p className="kicker" style={{textAlign:'center'}}>TIBERINO DAL 1888</p>
-            <h1 style={{textAlign:'center'}}>RICHIEDI UNA<br/>VALUTAZIONE</h1>
+            <h1 style={{textAlign:'center'}}>RICHIEDI UN<br/>CONTATTO</h1>
             <p style={{textAlign:'center'}}>
               Compila il form con i tuoi dati.
               <br />
@@ -191,13 +191,6 @@ export default function Home() {
               </label>
             </fieldset>
 
-            <label className="consent">
-              <input name="consenso" type="checkbox" required />
-              <span>
-                Ho capito che la collaborazione prevede una fase iniziale di valutazione e
-                degustazione*
-              </span>
-            </label>
 
             <label className="consent">
               <input name="consenso" type="checkbox" required />
