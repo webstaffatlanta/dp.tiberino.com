@@ -111,9 +111,6 @@ export default function Home() {
           <a className="icon-button" href="https://www.tiberino.com" target="_blank" aria-label="Visita il sito Tiberino">
             <GlobeIcon />
           </a>
-          <a className="icon-button" href="tel:+390805046600" aria-label="Chiama Tiberino">
-            <PhoneIcon />
-          </a>
           <a className="icon-button" href="mailto:info@tiberino.com" aria-label="Scrivi a Tiberino">
             <MailIcon />
           </a>
@@ -121,10 +118,6 @@ export default function Home() {
 
         <nav className="header-actions" aria-label="Contatti Tiberino">
           <div className="contact-list">
-            <a className="contact-link" href="tel:+390805046600">
-              <PhoneIcon />
-              <span>080 5046600</span>
-            </a>
             <a className="contact-link" href="mailto:info@tiberino.com">
               <MailIcon />
               <span>info@tiberino.com</span>

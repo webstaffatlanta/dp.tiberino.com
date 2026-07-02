@@ -40,7 +40,7 @@ export async function POST(request) {
     .filter(([key, value]) => key !== "consenso" && !value)
     .map(([key]) => key);
 
-  if (missingFields.length || !fields.consenso) {
+  if (missingFields.length) {
     return Response.json(
       { message: "Compila tutti i campi obbligatori prima di inviare." },
       { status: 400 },
