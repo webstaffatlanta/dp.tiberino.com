@@ -71,6 +71,10 @@ textarea {
   flex-wrap: wrap;
 }
 
+.mobile-icon-actions {
+  display: none;
+}
+
 .contact-list {
   display: flex;
   align-items: center;
@@ -98,6 +102,27 @@ textarea {
   height: 19px;
   fill: currentColor;
   flex: 0 0 auto;
+}
+
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(146, 38, 48, 0.22);
+  border-radius: 4px;
+  color: var(--accent);
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.icon-button .contact-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-button:active {
+  transform: translateY(1px);
 }
 
 .website-button,
@@ -352,26 +377,23 @@ textarea:focus {
 @media (max-width: 820px) {
   .site-header {
     align-items: center;
-    flex-direction: column;
-    gap: 14px;
-    padding: 16px clamp(16px, 5vw, 28px);
+    flex-direction: row;
+    gap: 12px;
+    min-height: 70px;
+    padding: 12px clamp(14px, 4vw, 22px);
   }
 
   .header-actions {
-    width: 100%;
-    justify-content: center;
-    gap: 12px;
+    display: none;
   }
 
-  .contact-list {
-    justify-content: center;
-    order: 2;
-    width: 100%;
-    gap: 10px 16px;
-  }
-
-  .website-button {
-    order: 1;
+  .mobile-icon-actions {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-left: auto;
+    flex: 0 0 auto;
   }
 
   .field-grid {
@@ -382,22 +404,27 @@ textarea:focus {
 @media (max-width: 560px) {
   .site-header {
     min-height: auto;
-    padding: 14px 16px;
+    padding: 10px 12px;
   }
 
   .brand img {
-    width: min(176px, 58vw);
+    width: min(142px, 42vw);
   }
 
-  .header-actions {
-    gap: 10px;
+  .mobile-icon-actions {
+    gap: 6px;
   }
 
-  .contact-link {
-    font-size: 0.82rem;
+  .icon-button {
+    width: 36px;
+    height: 36px;
   }
 
-  .website-button,
+  .icon-button .contact-icon {
+    width: 18px;
+    height: 18px;
+  }
+
   .submit-button {
     width: 100%;
   }

@@ -35,6 +35,14 @@ function MailIcon() {
   );
 }
 
+function GlobeIcon() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24" className="contact-icon">
+      <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.9 9h-3.2a16 16 0 0 0-1.2-5A8.1 8.1 0 0 1 18.9 11ZM12 4.1c.7 1 1.5 3.2 1.8 6.9h-3.6c.3-3.7 1.1-5.9 1.8-6.9ZM4.1 13h3.2a16 16 0 0 0 1.2 5 8.1 8.1 0 0 1-4.4-5Zm3.2-2H4.1a8.1 8.1 0 0 1 4.4-5 16 16 0 0 0-1.2 5Zm4.7 8.9c-.7-1-1.5-3.2-1.8-6.9h3.6c-.3 3.7-1.1 5.9-1.8 6.9Zm2.5-1.9a16 16 0 0 0 1.2-5h3.2a8.1 8.1 0 0 1-4.4 5Zm1.4-7a20 20 0 0 0-.9-5h.1a8.1 8.1 0 0 1 3.8 5h-3Zm-6.8 0a20 20 0 0 1 .9-5h4a20 20 0 0 1 .9 5H9.1Zm0 2h5.8a20 20 0 0 1-.9 5h-4a20 20 0 0 1-.9-5Z" />
+    </svg>
+  );
+}
+
 function Field({ id, label, type = "text", required = true, children }) {
   return (
     <label className="field" htmlFor={id}>
@@ -98,6 +106,18 @@ export default function Home() {
         <a className="brand" href="https://www.tiberino.com" target="_blank">
           <img src={logoUrl} alt="Tiberino" />
         </a>
+
+        <nav className="mobile-icon-actions" aria-label="Link rapidi Tiberino">
+          <a className="icon-button" href="https://www.tiberino.com" target="_blank" aria-label="Visita il sito Tiberino">
+            <GlobeIcon />
+          </a>
+          <a className="icon-button" href="tel:+390805046600" aria-label="Chiama Tiberino">
+            <PhoneIcon />
+          </a>
+          <a className="icon-button" href="mailto:info@tiberino.com" aria-label="Scrivi a Tiberino">
+            <MailIcon />
+          </a>
+        </nav>
 
         <nav className="header-actions" aria-label="Contatti Tiberino">
           <div className="contact-list">
