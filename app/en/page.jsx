@@ -100,12 +100,12 @@ export default function EnglishPage() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand" href="https://www.tiberino.com" target="_blank">
+        <a className="brand" href="https://b2b.tiberino.com" target="_blank">
           <img src={logoUrl} alt="Tiberino" />
         </a>
 
         <nav className="mobile-icon-actions" aria-label="Quick Tiberino links">
-          <a className="icon-button" href="https://www.b2b.tiberino.com" target="_blank" aria-label="Visit B2B Tiberino website">
+          <a className="icon-button" href="https://b2b.tiberino.com" target="_blank" aria-label="Visit B2B Tiberino website">
             <GlobeIcon />
           </a>
           <a className="icon-button" href="tel:+390805046600" aria-label="Call Tiberino">

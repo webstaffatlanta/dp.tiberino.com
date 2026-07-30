@@ -103,12 +103,12 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand" href="https://www.b2b.tiberino.com" target="_blank">
+        <a className="brand" href="https://b2b.tiberino.com" target="_blank">
           <img src={logoUrl} alt="Tiberino" />
         </a>
 
         <nav className="mobile-icon-actions" aria-label="Link rapidi Tiberino">
-          <a className="icon-button" href="https://www.b2b.tiberino.com" target="_blank" aria-label="Visita il sito B2B Tiberino">
+          <a className="icon-button" href="https://b2b.tiberino.com" target="_blank" aria-label="Visita il sito B2B Tiberino">
             <GlobeIcon />
           </a>
           <a className="icon-button" href="mailto:info@tiberino.com" aria-label="Scrivi a Tiberino">
@@ -123,7 +123,7 @@ export default function Home() {
               <span>info@tiberino.com</span>
             </a>
           </div>
-          <a className="website-button" href="https://www.b2b.tiberino.com" target="_blank">
+          <a className="website-button" href="https://b2b.tiberino.com" target="_blank">
             Visita il sito web B2B
           </a>
         </nav>
