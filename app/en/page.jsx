@@ -105,7 +105,7 @@ export default function EnglishPage() {
         </a>
 
         <nav className="mobile-icon-actions" aria-label="Quick Tiberino links">
-          <a className="icon-button" href="https://www.tiberino.com" target="_blank" aria-label="Visit Tiberino website">
+          <a className="icon-button" href="https://www.b2b.tiberino.com" target="_blank" aria-label="Visit B2B Tiberino website">
             <GlobeIcon />
           </a>
           <a className="icon-button" href="tel:+390805046600" aria-label="Call Tiberino">
@@ -128,7 +128,7 @@ export default function EnglishPage() {
             </a>
           </div>
           <a className="website-button" href="https://www.tiberino.com" target="_blank">
-            Visit website
+            Visit B2B website
           </a>
         </nav>
       </header>
